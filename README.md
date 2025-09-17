@@ -1,0 +1,1 @@
+# selecao-dev-fullstack-ia-2025-09
