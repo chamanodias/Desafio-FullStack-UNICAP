@@ -2,6 +2,14 @@
 
 > **Sistema completo para análise de sentimentos em texto, imagens e áudios usando Inteligência Artificial**
 
+
+
+<img width="1617" height="901" alt="image" src="https://github.com/user-attachments/assets/c49b3b69-88d8-42a9-a29f-cd2a7bcd3e53" />
+
+
+
+
+
 ## 🌟 Sobre o Projeto
 
 Este é um sistema full-stack de análise de sentimentos que processa:
