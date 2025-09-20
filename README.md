@@ -245,10 +245,6 @@ npm run dev
 - **Tempo de Resposta**: < 500ms para texto, < 2s para imagens
 - **Formatos Suportados**: 15+ tipos de arquivo
 
-## 🚀 Desenvolvido por
-
-**Lucas** - Sistema completo de análise de sentimentos com IA
-
 ---
 
 **🎉 Pronto para usar! Execute `./INICIAR.ps1` e acesse `http://localhost:5173`**
