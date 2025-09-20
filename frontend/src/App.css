@@ -1,0 +1,214 @@
+/* Reset para garantir aproveitamento total */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 0.5rem;
+  text-align: center;
+  flex-shrink: 0;
+  min-height: auto;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.App-header p {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.75rem;
+  opacity: 0.85;
+  line-height: 1.1;
+}
+
+main {
+  flex: 1;
+  padding: 0.25rem;
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* Responsividade otimizada - header compacto */
+@media (min-width: 768px) {
+  .App-header {
+    padding: 0.6rem;
+  }
+  
+  .App-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .App-header p {
+    font-size: 0.8rem;
+  }
+  
+  main {
+    padding: 0.4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App-header {
+    padding: 0.7rem;
+  }
+  
+  .App-header h1 {
+    font-size: 1.5rem;
+  }
+  
+  main {
+    padding: 0.5rem;
+  }
+}
+
+/* Telas grandes - header ainda compacto */
+@media (min-width: 1400px) {
+  .App-header {
+    padding: 0.8rem;
+  }
+  
+  .App-header h1 {
+    font-size: 1.6rem;
+  }
+  
+  .App-header p {
+    font-size: 0.85rem;
+  }
+  
+  main {
+    padding: 0.6rem;
+  }
+}
+
+/* Ultrawide e 4K - aproveitar espaço vertical */
+@media (min-width: 1920px) {
+  .App-header {
+    padding: 0.9rem;
+  }
+  
+  .App-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .App-header p {
+    font-size: 0.9rem;
+  }
+  
+  main {
+    padding: 0.7rem;
+  }
+}
+
+.App-footer {
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+  text-align: center;
+  border-top: 1px solid #e9ecef;
+  color: #6c757d;
+  font-size: 0.8rem;
+  flex-shrink: 0;
+}
+
+/* Loading spinner */
+.spinner {
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid #667eea;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ===== MODO TELA CHEIA ===== */
+.App.fullscreen-mode {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.App.fullscreen-mode .App-header {
+  padding: 0.8rem;
+  flex-shrink: 0;
+}
+
+.App.fullscreen-mode .App-header h1 {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.App.fullscreen-mode .App-header p {
+  font-size: 0.85rem;
+  margin: 0.2rem 0 0 0;
+}
+
+.App.fullscreen-mode main {
+  flex: 1;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Otimizações para diferentes resoluções em tela cheia */
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .App.fullscreen-mode .App-header {
+    padding: 1rem;
+  }
+  
+  .App.fullscreen-mode .App-header h1 {
+    font-size: 2rem;
+  }
+  
+  .App.fullscreen-mode .App-header p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1366px) and (max-height: 768px) {
+  .App.fullscreen-mode .App-header {
+    padding: 0.6rem;
+  }
+  
+  .App.fullscreen-mode .App-header h1 {
+    font-size: 1.4rem;
+  }
+  
+  .App.fullscreen-mode .App-header p {
+    font-size: 0.8rem;
+  }
+}

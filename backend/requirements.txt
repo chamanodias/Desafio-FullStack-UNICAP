@@ -1,0 +1,38 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+python-dotenv==1.0.0
+httpx==0.25.2
+requests==2.31.0
+
+# IA e Machine Learning
+torch>=2.0.0
+transformers>=4.30.0
+scikit-learn>=1.3.0
+pandas>=2.0.0
+numpy>=1.24.0
+nltk>=3.8
+textblob>=0.17.1
+
+# Processamento de texto avançado
+spacy>=3.6.0
+wordcloud>=1.9.0
+seaborn>=0.12.0
+matplotlib>=3.7.0
+
+# Utilitários
+tqdm>=4.65.0
+joblib>=1.3.0
+psutil>=5.9.0
+
+# Processamento de Imagem e Áudio
+Pillow>=10.0.0
+opencv-python>=4.8.0
+speech-recognition>=3.10.0
+pydub>=0.25.1
+librosa>=0.10.0
+whisper-openai>=20230314
+tesseract>=0.1.3
+pytesseract>=3.1.8
